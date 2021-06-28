@@ -8,7 +8,7 @@ spring:
     hibernate:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImp
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       
 server:
   port: 8000
