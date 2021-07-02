@@ -1,0 +1,19 @@
+datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${servidorBD}:${portBD}/viajes?serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${servidorEureka}:8761/eureka
+          
