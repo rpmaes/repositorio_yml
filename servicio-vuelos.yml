@@ -1,8 +1,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-   # url: jdbc:mysql://${servidorBD}:${portBD}/viajes?serverTimezone=UTC
-    url: jdbc:mysql://localhost:3307/viajes?serverTimezone=UTC
+    url: jdbc:mysql://${servidorBD}:${portBD}/viajes?serverTimezone=UTC
+    #url: jdbc:mysql://localhost:3307/viajes?serverTimezone=UTC
     username: root
     password: root
   jpa:
@@ -17,5 +17,5 @@ server:
 eureka:
   client:
     service-url:
-      #defaultZone: http://${servidorEureka}:8761/eureka
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://${servidorEureka}:8761/eureka
+      #defaultZone: http://localhost:8761/eureka
