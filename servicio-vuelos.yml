@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${servidorBD}:${portBD}/viajes?serverTimezone=UTC
+    url: jdbc:mysql://${servidorBD}:3307/viajes?serverTimezone=UTC
     #url: jdbc:mysql://localhost:3307/viajes?serverTimezone=UTC
     username: root
     password: root
